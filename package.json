@@ -1,0 +1,98 @@
+{
+  "name": "@longnc/themartec-esdoc",
+  "version": "1.0.0",
+  "description": "Good Documentation Generator For JavaScript",
+  "author": "Long Nguyen <long.nguyen@themartec.com> (https://themartec.com)",
+  "homepage": "https://esdoc.org/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themartec/esdoc.git"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "scripts": {
+    "build": "node ./script/build.js",
+    "test": "node ./script/test.js",
+    "test-ci": "node ./script/test-ci.js",
+    "esdoc": "node ./script/esdoc.js",
+    "lint": "node ./script/eslint.js"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.26.3",
+    "@babel/traverse": "^7.26.4",
+    "@longnc/themartec-ice-cap": "^1.0.0",
+    "babylon": "^6.18.0",
+    "cheerio": "^1.0.0",
+    "color-logger": "^0.0.6",
+    "escape-html": "^1.0.3",
+    "eslint": "^9.17.0",
+    "fs-extra": "^11.2.0",
+    "lodash": "^4.17.21",
+    "lodash.assignin": "^4.2.0",
+    "lodash.bind": "^4.2.1",
+    "lodash.debounce": "^4.0.8",
+    "lodash.defaults": "^4.2.0",
+    "lodash.filter": "^4.6.0",
+    "lodash.flatten": "^4.4.0",
+    "lodash.flattendeep": "^4.4.0",
+    "lodash.foreach": "^4.5.0",
+    "lodash.map": "^4.6.0",
+    "lodash.merge": "^4.6.2",
+    "lodash.reduce": "^4.6.0",
+    "lodash.reject": "^4.6.0",
+    "lodash.some": "^4.6.0",
+    "marked": "^15.0.4",
+    "minimist": "^1.2.8",
+    "mocha": "^11.0.1",
+    "nyc": "^17.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.26.3",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/register": "^7.25.9",
+    "babel-plugin-istanbul": "^7.0.0",
+    "codecov": "^3.8.3",
+    "esdoc-accessor-plugin": "^1.0.0",
+    "esdoc-external-ecmascript-plugin": "^1.0.0",
+    "esdoc-importpath-plugin": "^1.0.2",
+    "@longnc/themartec-esdoc-standard-plugin": "^1.0.1",
+    "esdoc-undocumented-identifier-plugin": "^1.0.0"
+  },
+  "keywords": [
+    "jsdoc",
+    "api",
+    "document",
+    "documentation",
+    "ES6",
+    "ECMAScript6",
+    "ES2015",
+    "ECMAScript2015",
+    "ES7",
+    "ECMAScript7",
+    "ES2016",
+    "ECMAScript2016",
+    "ES8",
+    "ECMAScript8",
+    "ES2017",
+    "ECMAScript2017",
+    "proposal"
+  ],
+  "files": [
+    "out/src",
+    "README.md"
+  ],
+  "main": "out/src/ESDoc.js",
+  "bin": {
+    "esdoc": "out/src/ESDocCLI.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "bugs": {
+    "url": "https://github.com/themartec/esdoc/issues"
+  }
+}
